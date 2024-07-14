@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <>
       {/* Navbar */}
-      <div className="relative flex justify-center items-center h-29 border border-3 border-[#2B2225] bg-[#EBEBEB]">
+      <div className="relative z-40">
+      <div className="fixed w-full flex justify-center items-center h-29 border border-3 border-[#2B2225] bg-[#EBEBEB]">
         <img src={"./assets/Group 47.png"} alt="" className="absolute top-2 left-12 w-40" />
         <div className="py-7 px-5">HOME</div>
         <div className="py-7 px-5">WHATS ON</div>
@@ -13,12 +14,13 @@ export default function Home() {
         <div className="py-7 px-5">RUNDOWN EVENT</div>
         <div className="py-7 px-5">CONTACT US</div>
       </div>
+      </div>
 
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Home */}
-        <div className="relative grid grid-cols-2">
+        <div className="relative grid grid-cols-2 pt-20">
           <div className="flex flex-wrap justify-center items-center pt-12 pb-24 bg-[#203731]">
             <div className="px-12">
               <h1 className="font-bold text-5xl text-[#CBBA9D]">
@@ -242,7 +244,7 @@ export default function Home() {
         </div>
         <div className="relative flex bg-[#4C6444]">
           <div className="flex justify-end">
-            <img src={"./assets/Emporium-Pluit-Mall@2x.png"} alt="" className="w-1/2"/>
+            <img src={"./assets/Emporium-Pluit-Mall@2x.png"} alt="" className="w-1/2" />
           </div>
           <div className="absolute top-8 left-8 rounded-3xl px-32 py-10 bg-[#EBEBEB] w-1/2">
             <div className="">
@@ -254,16 +256,52 @@ export default function Home() {
                   </h1>
                 </div>
               </div>
-              </div>
-              <p className="mt-7 text-sm">Embark on an unforgettable coffee adventure at Indonesia Caffe Show, held at the vibrant Emporium Pluit Mall.
-                Conveniently located amidst all the conveniences of downtown Jakarta, the event is easily accessible by various transportation options.
-                Plan your Indonesia Caffe Show visit with our suggested travel routes.
-                Explore our interactive map and discover the recommended travel options that best suit you.</p>
             </div>
-
+            <p className="mt-7 text-sm">Embark on an unforgettable coffee adventure at Indonesia Caffe Show, held at the vibrant Emporium Pluit Mall.
+              Conveniently located amidst all the conveniences of downtown Jakarta, the event is easily accessible by various transportation options.
+              Plan your Indonesia Caffe Show visit with our suggested travel routes.
+              Explore our interactive map and discover the recommended travel options that best suit you.</p>
           </div>
+
         </div>
 
-      </>
-      )
+        {/* Google Maps */}
+        <div className="flex justify-evenly items-center px-14 h-10 border-y border-3 border-[#2B2225] bg-[#8A966D]">
+          <div className="py-7 px-5">By Car</div>
+          <div className="py-7 px-5">By Taxi</div>
+          <div className="py-7 px-5">By Transjakarta</div>
+          <div className="py-7 px-5">By Train</div>
+        </div>
+        <div className="bg-[#EBEBEB] flex justify-center items-center py-7 px-10">
+          <iframe className="rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0245842754643!2d106.78885302591291!3d-6.127393960080999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d8d0db9e06d%3A0x54cb9f1766bde458!2sEmporium%20Pluit%20Mall!5e0!3m2!1sen!2sid!4v1720958863442!5m2!1sen!2sid" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        {/* Rundown Event */}
+        <div className="bg-[#4C6444]">
+          <div className="bg-[#242424] w-5/12 pr-7 pb-7 rounded-br-3xl">
+            <div className="flex items-center p-10 bg-[#EBEBEB] rounded-br-3xl">
+              <div className="ml-10 border-4 border-[#102821] py-4 rounded mr-5"></div>
+              <h1 className="text-2xl font-bold">
+                Rundown Event
+              </h1>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex justify-around pt-7 pb-3 w-3/4 border-b-2 border-[#242424]">
+              <div>31 July</div>
+              <div>01 August</div>
+              <div>02 August</div>
+              <div>03 August</div>
+              <div>04 August</div>
+            </div>
+          </div>
+          <div className="mt-10 w-3/5 relative">
+            <img src={"./assets/Group 341@2x.png"} alt="" />
+            <div className="absolute">31 Juli</div>
+          </div>
+        </div>
+      </div>
+
+    </>
+  )
 }
