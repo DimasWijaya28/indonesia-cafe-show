@@ -16,26 +16,27 @@ export default function Home() {
 
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
         {/* Home */}
-        <div className="relative flex">
-          <div className="flex flex-wrap justify-center items-center pt-12 pb-40 bg-[#203731]">
+        <div className="relative grid grid-cols-2">
+          <div className="flex flex-wrap justify-center items-center pt-12 pb-24 bg-[#203731]">
             <div className="px-12">
               <h1 className="font-bold text-5xl text-[#CBBA9D]">
                 Brewing Indonesia's Finest
               </h1>
-              <h3 className="mt-14 text-2xl text-[#CBBA9D]">
+              <h3 className="mt-12 text-2xl text-[#CBBA9D]">
                 Experience the culmination of Indonesian coffee culture at
               </h3>
               <h3 className="font-bold text-2xl text-[#CBBA9D]">
                 Emporium Pluit Mall, Jakarta. July 31st - August 4th, 2024
               </h3>
-              <p className="mt-14 text-wrap text-[#CBBA9D]">
+              <p className="mt-12 text-wrap text-[#CBBA9D]">
                 The Indonesia Cafe Show, themed 'Brewing Indonesia's Finest,' is the premier event celebrating the rich heritage and exceptional coffee of Indonesia. This inaugural event brings together industry professionals, cafe owners, and coffee enthusiasts for a unique experience.
               </p>
             </div>
           </div>
-          <div className="w-full">
-            <img src={"./assets/pexels-maksgelatin-4816457@2x.png"} alt="" className="w-full" />
+          <div className="">
+            <img src={"./assets/image1.png"} alt="" className="" />
           </div>
           <div className="flex absolute bottom-0 bg-[#8A966D] w-full h-20 border-2 border-[#2B2225]">
             <div className="flex items-center">
@@ -43,6 +44,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* About */}
         <div className="bg-[#EBEBEB] px-20 pt-10 pb-32">
           <div className="flex items-center ">
@@ -100,6 +102,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           {/* whats on */}
           <div className="flex items-center mt-10">
             <div className="border-4 border-[#102821] py-4 rounded mr-5"></div>
@@ -135,14 +138,15 @@ export default function Home() {
               <img src={"./assets/1@2x.png"} alt="" />
             </div>
           </div>
+
           {/* whos there */}
         </div>
         <div className="relative flex flex-row-reverse border-2 border-[#2B2225] bg-[#4C6444]">
-          <div className="absolute -top-16 left-5 w-1/2">
-            <img src={"./assets/Group 241@2x.png"} alt="" className="w-11/12"/>
+          <div className="absolute -top-20 left-10 w-1/2">
+            <img src={"./assets/Group 241@2x.png"} alt="" className="" />
           </div>
-          <div className="py-7 pl-7 bg-[#203731] rounded-3xl w-1/2">
-            <div className="pt-3 pl-10 rounded-3xl bg-[#EBEBEB]">
+          <div className="py-7 pl-7 bg-[#203731] rounded-l-3xl w-2/5">
+            <div className="w-full pt-3 pl-10 rounded-l-3xl bg-[#EBEBEB]">
               <div className="flex items-center">
                 <div className="border-4 border-[#102821] py-4 rounded mr-5"></div>
                 <div>
@@ -154,7 +158,7 @@ export default function Home() {
               <h1 className="ml-7 mt-2 font-bold text-[#102821] text-3xl">
                 a Perfect Collaboration!
               </h1>
-              <div className="w-3/4 mt-7">
+              <div className="w-full mt-7 pr-5">
                 <p className="text-sm">
                   We're proud to announce our collaboration with industry leaders such as SCAI (Specialty Coffee Association of Indonesia), Poros Kopi, Emporium Pluit Mall, and PengenKopi.
                 </p>
@@ -182,8 +186,84 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
 
-    </>
-  )
+        {/* Brand Participant */}
+        <div className="bg-[#EBEBEB]">
+          <div className="flex justify-center items-center pt-20">
+            <div className="border-4 border-[#102821] py-4 rounded mr-5"></div>
+            <div>
+              <h1 className="font-bold text-[#102821] text-3xl">
+                Brand Participant
+              </h1>
+            </div>
+          </div>
+          <div className="grid grid-cols-5 gap-12 py-10 px-32 mt-10">
+            <img src={"./assets/tenant/6.png"} alt="" className="" />
+            <img src={"./assets/tenant/122ea7bbbb57c6708d3ac6c989341bd1.w970.h300.png"} alt="" />
+            <img src={"./assets/tenant/23041295.png"} alt="" />
+            <img src={"./assets/tenant/223738595_1953923794773381_4166939463297907421_n.png"} alt="" />
+            <img src={"./assets/tenant/305410185_1093901451349243_5479258215677611317_n.png"} alt="" />
+            <img src={"./assets/tenant/309359679_401358282189483_6065704401251197175_n.png"} alt="" />
+            <img src={"./assets/tenant/BRANCH-THUMBNAIL-AYOMAKAN_20230117134445.png"} alt="" />
+            <img src={"./assets/tenant/Brewista_logo.png"} alt="" />
+            <img src={"./assets/tenant/Delizia-delizia-logo.png"} alt="" />
+            <img src={"./assets/tenant/Djauw-Coffee.png"} alt="" />
+            <img src={"./assets/tenant/Eureka.png"} alt="" />
+            <img src={"./assets/tenant/Fifty_Five_logo.png"} alt="" />
+            <img src={"./assets/tenant/Frame 9.png"} alt="" />
+            <img src={"./assets/tenant/Gaggia_logo.png"} alt="" />
+            <img src={"./assets/tenant/images (1).png"} alt="" />
+            <img src={"./assets/tenant/images.png"} alt="" />
+            <img src={"./assets/tenant/k$-1.png"} alt="" />
+            <img src={"./assets/tenant/k$36f65b4f83dac5ee17830e7accd160d0.png"} alt="" />
+            <img src={"./assets/tenant/KitchenAid-Logo.png"} alt="" />
+            <img src={"./assets/tenant/KitchenArt Logo.png"} alt="" />
+            <img src={"./assets/tenant/la-pavoni-logo-png-transparent.png"} alt="" />
+            <img src={"./assets/tenant/Layer 1.png"} alt="" />
+            <img src={"./assets/tenant/Lelit_Logo_535x.png"} alt="" />
+            <img src={"./assets/tenant/Logo Horizontal  Black Transparent.png"} alt="" />
+            <img src={"./assets/tenant/Logo_fore_2020_color_landscape.png"} alt="" />
+            <img src={"./assets/tenant/logo-380633007-1661096391-d6b8a42949bd64d7062d8f947005d2651661096391.png"} alt="" />
+            <img src={"./assets/tenant/logo.2f69f3f55f41.png"} alt="" />
+            <img src={"./assets/tenant/logo.b385dadb720e51d38b4df2fc895808f8.png"} alt="" />
+            <img src={"./assets/tenant/logotype.png"} alt="" />
+            <img src={"./assets/tenant/MHW-3BOMBER.png"} alt="" />
+            <img src={"./assets/tenant/MiiR_Logo_Black.png"} alt="" />
+            <img src={"./assets/tenant/rasa_group_logo.png"} alt="" />
+            <img src={"./assets/tenant/robeanhood_new_logo-removebg-preview__3_-removebg-preview-1.png"} alt="" />
+            <img src={"./assets/tenant/Small_wordmark.png"} alt="" />
+            <img src={"./assets/tenant/Talasi-Logo-Color.png"} alt="" />
+            <img src={"./assets/tenant/Ubrukopi.png"} alt="" />
+            <img src={"./assets/tenant/WhatsApp Image -1.png"} alt="" />
+            <img src={"./assets/tenant/WhatsApp Image 2024-06-25 at 15.02.13_e6c62ed1.png"} alt="" />
+            <img src={"./assets/tenant/WhatsApp-Image-2024-01-05-at-3.11.39-PM-2.png"} alt="" />
+            <img src={"./assets/tenant/6.png"} alt="" />
+          </div>
+        </div>
+        <div className="relative flex bg-[#4C6444]">
+          <div className="flex justify-end">
+            <img src={"./assets/Emporium-Pluit-Mall@2x.png"} alt="" className="w-1/2"/>
+          </div>
+          <div className="absolute top-8 left-8 rounded-3xl px-32 py-10 bg-[#EBEBEB] w-1/2">
+            <div className="">
+              <div className="flex items-center">
+                <div className="border-4 border-[#102821] py-4 rounded mr-5"></div>
+                <div>
+                  <h1 className="font-bold text-[#102821] text-3xl">
+                    Getting Here
+                  </h1>
+                </div>
+              </div>
+              </div>
+              <p className="mt-7 text-sm">Embark on an unforgettable coffee adventure at Indonesia Caffe Show, held at the vibrant Emporium Pluit Mall.
+                Conveniently located amidst all the conveniences of downtown Jakarta, the event is easily accessible by various transportation options.
+                Plan your Indonesia Caffe Show visit with our suggested travel routes.
+                Explore our interactive map and discover the recommended travel options that best suit you.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </>
+      )
 }
