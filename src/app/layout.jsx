@@ -1,7 +1,47 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import { newScience } from "@/utils/customFonts/index.js";
+import CustomFont from 'next/font/local'
+
 
 const inter = Inter({ subsets: ["latin"] });
+const newScience = CustomFont({
+  src: [
+    {
+      path: './styles/fonts/New_Science_Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './styles/fonts/New_Science_Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './styles/fonts/New_Science_Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './styles/fonts/New_Science_SemiBold.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './styles/fonts/New_Science_Thin.otf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: './styles/fonts/New_Science_Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: "--font-new-science",
+  display:'swap'
+  
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -11,8 +51,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <body className={inter.className}>
+      <body className={`${newScience.variable}`}>
+        <div className="">
         {children}
+        </div>
       </body>
     </html>
   );
