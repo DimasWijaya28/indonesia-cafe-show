@@ -1,5 +1,7 @@
 // const { newScience } = require('@/utils/customFonts.js');
 
+// const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,6 +18,15 @@ module.exports = {
       },
       fontFamily: {
         newScience: ["var(--font-new-science)"],
+      },
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: {transform: "translateX(0)"},
+          to: { transform: "translateX(-100%)"}
+        }
       }
     },
   },

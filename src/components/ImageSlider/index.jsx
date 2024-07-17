@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { ArrowLongRightIcon, ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 
 export default function ImageSlider({ children: images }) {
 
@@ -12,19 +13,16 @@ export default function ImageSlider({ children: images }) {
     return (
         <div className="overflow-hidden relative">
             <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr * 100}%)` }}>{images}</div>
-            <div className="absolute inset-5 flex items- justify-between">
-                <button onClick={prev} className="text-white">prev</button>
-                <button onClick={next} className="text-white">next</button>
-            </div>
-            <div className="absolute bottom-4 right-0 left-0">
+            <div className="absolute inset-x-0 bottom-16 flex items-center justify-center gap-5">
                 <div className="flex items-center justify-center gap-2">
                     {images.map((_, i) => (
                         <div className={`transition-all w-3 h-3 bg-white rounded-full ${curr === i ? "p-2" : "bg-opacity-50"}`} />
                     ))}
-                    
                 </div>
+                <button onClick={prev} className="rounded-xl px-4 py-2 bg-white group hover:bg-[#9F6B46]"><ArrowLongLeftIcon class="size-6 text-black group-hover:text-white" /></button>
+                <button onClick={next} className="rounded-xl px-4 py-2 bg-white group hover:bg-[#9F6B46]"><ArrowLongRightIcon class="size-7 text-black group-hover:text-white" /></button>
             </div>
         </div>
-        
+
     )
 }
