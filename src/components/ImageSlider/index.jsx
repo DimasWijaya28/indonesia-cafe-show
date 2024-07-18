@@ -20,7 +20,7 @@ export default function ImageSlider({ children: images }) {
                     ))}
                 </div>
                 <button onClick={prev} className="rounded-xl px-4 py-2 bg-white group hover:bg-[#9F6B46]"><ArrowLongLeftIcon class="size-6 text-black group-hover:text-white" /></button>
-                <button onClick={next} className="rounded-xl px-4 py-2 bg-white group hover:bg-[#9F6B46]"><ArrowLongRightIcon class="size-7 text-black group-hover:text-white" /></button>
+                <button onClick={next} className="rounded-xl px-4 py-2 bg-white group hover:bg-[#9F6B46]"><ArrowLongRightIcon class="size-6 text-black group-hover:text-white" /></button>
             </div>
         </div>
 

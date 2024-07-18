@@ -11,3 +11,9 @@
       src: url(/fonts/Roboto.woff2) format('woff2');
     }
   } */
+
+  #box-shadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 20px 25px #2B2225;
+  }
