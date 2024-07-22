@@ -4,12 +4,12 @@ import { useState } from "react"
 export default function RundownEvent() {
     const july = () => {
         return (
-            <div className="mt-10 w-3/5">
-                <div>
+            <div className="mt-5">
+                {/* <div>
                     <img src={"./assets/Group 341@2x.png"} alt="" className="w-11/12" />
-                </div>
-                <div className="absolute inset-0 top-96 left-17 flex justify-center items-center">
-                    <div className="mr-96 pr-36">
+                </div> */}
+                <div className="flex justify-center items-center">
+                    {/* <div className="mr-96 pr-36">
                         <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
                             Day 1
                         </h1>
@@ -19,9 +19,9 @@ export default function RundownEvent() {
                         <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
                             TH
                         </h1>
-                    </div>
-                    <div className="grid grid-rows-4 w-2/5 gap-16 font-newScience text-xl content-center">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
+                    </div> */}
+                    <div className="grid grid-rows-4 gap-10 px-16 font-newScience text-xl">
+                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex">
                             <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
                                 <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
                                 <p className="text-[#EBEBEB] text-sm">WIB</p>
@@ -71,12 +71,12 @@ export default function RundownEvent() {
    
     const august = () => {
         return (
-            <div className="mt-10 w-3/5">
-                <div>
+            <div className="mt-5">
+                {/* <div>
                     <img src={"./assets/01 August.png"} alt="" className="w-11/12" />
-                </div>
-                <div className="absolute inset-0 top-96 left-17 flex justify-center items-center">
-                    <div className="mr-96 pr-36">
+                </div> */}
+                <div className="flex justify-center items-center">
+                    {/* <div className="mr-96 pr-36">
                         <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
                             Day 2
                         </h1>
@@ -86,8 +86,8 @@ export default function RundownEvent() {
                         <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
                             TH
                         </h1>
-                    </div>
-                    <div className="grid grid-rows-6 w-2/5 gap-16 font-newScience text-xl content-center">
+                    </div> */}
+                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
                         <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
                             <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
                                 <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
@@ -156,12 +156,12 @@ export default function RundownEvent() {
 
     const secondAugust = () => {
         return (
-            <div className="mt-10 w-3/5">
-                <div>
+            <div className="mt-5">
+                {/* <div>
                     <img src={"./assets/02 August.png"} alt="" className="w-11/12" />
-                </div>
-                <div className="absolute inset-0 top-96 left-17 flex justify-center items-center">
-                    <div className="mr-96 pr-36">
+                </div> */}
+                <div className="flex justify-center items-center">
+                    {/* <div className="mr-96 pr-36">
                         <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
                             Day 3
                         </h1>
@@ -171,8 +171,8 @@ export default function RundownEvent() {
                         <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
                             TH
                         </h1>
-                    </div>
-                    <div className="grid grid-rows-3 w-2/5 gap-16 font-newScience text-xl content-center">
+                    </div> */}
+                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
                         <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
                             <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
                                 <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
@@ -211,12 +211,12 @@ export default function RundownEvent() {
 
     const thirdAugust = () => {
         return (
-            <div className="mt-10 w-3/5">
-                <div>
+            <div className="mt-5">
+                {/* <div>
                     <img src={"./assets/003.png"} alt="" className="w-11/12" />
-                </div>
-                <div className="absolute inset-0 top-96 left-17 flex justify-center items-center">
-                    <div className="mr-96 pr-36">
+                </div> */}
+                <div className="flex justify-center items-center">
+                    {/* <div className="mr-96 pr-36">
                         <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
                             Day 4
                         </h1>
@@ -226,8 +226,8 @@ export default function RundownEvent() {
                         <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
                             TH
                         </h1>
-                    </div>
-                    <div className="grid grid-rows-6 w-2/5 gap-16 font-newScience text-xl content-center">
+                    </div> */}
+                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
                         <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
                             <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
                                 <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
@@ -296,12 +296,12 @@ export default function RundownEvent() {
 
     const fourthAugust = () => {
         return (
-            <div className="mt-10 w-3/5">
-                <div>
+            <div className="mt-5">
+                {/* <div>
                     <img src={"./assets/Group 325.png"} alt="" className="w-11/12" />
-                </div>
-                <div className="absolute inset-0 top-96 left-17 flex justify-center items-center">
-                    <div className="mr-96 pr-36">
+                </div> */}
+                <div className="flex justify-center items-center">
+                    {/* <div className="mr-96 pr-36">
                         <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
                             Day 5
                         </h1>
@@ -311,8 +311,8 @@ export default function RundownEvent() {
                         <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
                             TH
                         </h1>
-                    </div>
-                    <div className="grid grid-rows-4 w-2/5 gap-16 font-newScience text-xl content-center">
+                    </div> */}
+                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
                         <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
                             <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
                                 <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
@@ -360,26 +360,26 @@ export default function RundownEvent() {
     }
 
     return (
-        <div className="bg-[#4C6444] relative">
-            <div className="bg-[#242424] max-w-4xl pr-7 pb-7 rounded-br-3xl">
-                <div className="flex items-center px-10 py-16 bg-[#EBEBEB] rounded-br-3xl">
-                    <div className="ml-32 border-4 border-[#102821] py-7 rounded mr-10"></div>
-                    <h1 className="text-5xl font-newScience font-bold">
+        <div className="bg-[#4C6444] border-y border-black relative pb-10">
+            <div className="bg-[#242424] pr-7 pb-7 w-96 rounded-br-3xl">
+                <div className="flex items-center px-2 py-5  bg-[#EBEBEB] rounded-br-3xl">
+                    <div className="border-4 border-[#102821] py-5 rounded mr-5"></div>
+                    <h1 className="text-3xl font-newScience font-bold">
                         RUNDOWN EVENT
                     </h1>
                 </div>
             </div>
-            <div className="flex justify-center py-10">
-                <div className="flex justify-around pt-7 w-3/4 border-b-2 font-newScience text-2xl tracking-wide text-[#EBEBEB] border-[#242424]">
-                    <button onClick={() => (setHandleClick(july))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">31 July</button>
-                    <button onClick={() => (setHandleClick(august))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">01 August</button>
-                    <button onClick={() => (setHandleClick(secondAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">02 August</button>
-                    <button onClick={() => (setHandleClick(thirdAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">03 August</button>
-                    <button onClick={() => (setHandleClick(fourthAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">04 August</button>
+            <div className="flex justify-center py-5">
+                <div className="flex justify-around pt-5 tracking-wider border-b-2 font-newScience text-md text-[#EBEBEB] border-[#242424]">
+                    <button onClick={() => (setHandleClick(july))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">31 Jul</button>
+                    <button onClick={() => (setHandleClick(august))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">01 Aug</button>
+                    <button onClick={() => (setHandleClick(secondAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">02 Aug</button>
+                    <button onClick={() => (setHandleClick(thirdAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">03 Aug</button>
+                    <button onClick={() => (setHandleClick(fourthAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">04 Aug</button>
                 </div>
                 
             </div>
-            <div className="flex">
+            <div className="p-5">
                 {handleClick}
                 </div>
 
