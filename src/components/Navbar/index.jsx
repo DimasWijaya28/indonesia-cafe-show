@@ -7,6 +7,8 @@ import { useState } from 'react'
 export default function Navbar() {
 
     const [panel, setPanel] = useState(false)
+
+
     const navigation = [
         { name: 'HOME', href: '#section1' },
         { name: "WHAT'S ON", href: '#section2' },
@@ -43,14 +45,13 @@ export default function Navbar() {
             <div className="fixed border-2 w-full z-40 px-4 py-3  border-[#2B2225] bg-[#EBEBEB]">
                 <div className="flex justify-between items-center">
                     <img src={"./assets/Group 47.png"} alt="" className="w-32" />
-                    <div className="">
-
+                    <div className="transition-all">
                         {panel ? <button onClick={close}><XMarkIcon className='size-6' /></button> : <button onClick={() => (setPanel(menu))}><Bars3Icon className="size-6" /></button>}
-
-
                     </div>
                 </div>
-                {panel}
+                <div className='navlinks'>
+                    {panel}
+                </div>
             </div>
 
         </>

@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 // import { newScience } from "@/utils/customFonts/index.js";
 import CustomFont from 'next/font/local'
 
@@ -53,6 +54,9 @@ export default function RootLayout({ children }) {
     <html className="scroll-smooth" lang="en">
       <body className={`${newScience.variable}`}>
         <div className="">
+        <section className="w-96">
+          <Navbar />
+        </section>
         {children}
         </div>
       </body>

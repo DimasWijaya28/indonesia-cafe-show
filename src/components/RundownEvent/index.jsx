@@ -4,63 +4,45 @@ import { useState } from "react"
 export default function RundownEvent() {
     const july = () => {
         return (
-            <div className="mt-5">
-                {/* <div>
-                    <img src={"./assets/Group 341@2x.png"} alt="" className="w-11/12" />
-                </div> */}
-                <div className="flex justify-center items-center">
-                    {/* <div className="mr-96 pr-36">
-                        <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
-                            Day 1
-                        </h1>
-                        <span className="text-3xl font-newScience font-bold text-[#EBEBEB]">
-                            Wednesday 31
-                        </span>
-                        <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
-                            TH
-                        </h1>
-                    </div> */}
-                    <div className="grid grid-rows-4 gap-10 px-16 font-newScience text-xl">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
+            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
                     </div>
                 </div>
             </div>
@@ -68,86 +50,48 @@ export default function RundownEvent() {
     }
 
     const [handleClick, setHandleClick] = useState(july)
-   
+
     const august = () => {
         return (
-            <div className="mt-5">
-                {/* <div>
-                    <img src={"./assets/01 August.png"} alt="" className="w-11/12" />
-                </div> */}
-                <div className="flex justify-center items-center">
-                    {/* <div className="mr-96 pr-36">
-                        <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
-                            Day 2
-                        </h1>
-                        <span className="text-3xl font-newScience font-bold text-[#EBEBEB]">
-                            Thursday 01
-                        </span>
-                        <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
-                            TH
-                        </h1>
-                    </div> */}
-                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
+            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
                     </div>
                 </div>
             </div>
@@ -156,53 +100,45 @@ export default function RundownEvent() {
 
     const secondAugust = () => {
         return (
-            <div className="mt-5">
-                {/* <div>
-                    <img src={"./assets/02 August.png"} alt="" className="w-11/12" />
-                </div> */}
-                <div className="flex justify-center items-center">
-                    {/* <div className="mr-96 pr-36">
-                        <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
-                            Day 3
-                        </h1>
-                        <span className="text-3xl font-newScience font-bold text-[#EBEBEB]">
-                            Friday 02
-                        </span>
-                        <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
-                            TH
-                        </h1>
-                    </div> */}
-                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
+            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
                     </div>
                 </div>
             </div>
@@ -211,83 +147,45 @@ export default function RundownEvent() {
 
     const thirdAugust = () => {
         return (
-            <div className="mt-5">
-                {/* <div>
-                    <img src={"./assets/003.png"} alt="" className="w-11/12" />
-                </div> */}
-                <div className="flex justify-center items-center">
-                    {/* <div className="mr-96 pr-36">
-                        <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
-                            Day 4
-                        </h1>
-                        <span className="text-3xl font-newScience font-bold text-[#EBEBEB]">
-                            Saturday 03
-                        </span>
-                        <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
-                            TH
-                        </h1>
-                    </div> */}
-                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
+            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
                     </div>
                 </div>
             </div>
@@ -296,63 +194,45 @@ export default function RundownEvent() {
 
     const fourthAugust = () => {
         return (
-            <div className="mt-5">
-                {/* <div>
-                    <img src={"./assets/Group 325.png"} alt="" className="w-11/12" />
-                </div> */}
-                <div className="flex justify-center items-center">
-                    {/* <div className="mr-96 pr-36">
-                        <h1 className="text-3xl mb-5 font-newScience font-bold text-[#EBEBEB]">
-                            Day 5
-                        </h1>
-                        <span className="text-3xl font-newScience font-bold text-[#EBEBEB]">
-                            Sunday 4
-                        </span>
-                        <h1 className="inline-block align-top text-xl font-bold text-[#EBEBEB]">
-                            TH
-                        </h1>
-                    </div> */}
-                    <div className="grid grid-rows-6 gap-10 px-16 font-newScience text-xl">
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
-                        <div id="box-shadow" className="bg-[#EBEBEB] w-full flex py-3">
-                            <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-3 py-5 justify-center items-center">
-                                <p className="text-[#EBEBEB] text-lg">09.00 - 10.00</p>
-                                <p className="text-[#EBEBEB] text-sm">WIB</p>
-                            </div>
-                            <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
-                                <p>WORKSHOP</p>
-                                <p className="font-bold">IBrc Judge Workshop</p>
-                            </div>
-                        </div>
+            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
+                    </div>
+                </div>
+                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+                    <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
+                        <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
+                        <p className="text-[#EBEBEB] text-sm">WIB</p>
+                    </div>
+                    <div className="flex flex-wrap w-56 h-20 mt-3 items-center">
+                        <p>WORKSHOP</p>
+                        <p className="font-bold">IBrc Judge Workshop</p>
                     </div>
                 </div>
             </div>
@@ -360,9 +240,9 @@ export default function RundownEvent() {
     }
 
     return (
-        <div className="bg-[#4C6444] border-y border-black relative pb-10">
+        <div className="bg-[#4C6444] border-y border-black pb-10">
             <div className="bg-[#242424] pr-7 pb-7 w-96 rounded-br-3xl">
-                <div className="flex items-center px-2 py-5  bg-[#EBEBEB] rounded-br-3xl">
+                <div className="flex items-center px-2 py-5 bg-[#EBEBEB] rounded-br-3xl">
                     <div className="border-4 border-[#102821] py-5 rounded mr-5"></div>
                     <h1 className="text-3xl font-newScience font-bold">
                         RUNDOWN EVENT
@@ -377,11 +257,11 @@ export default function RundownEvent() {
                     <button onClick={() => (setHandleClick(thirdAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">03 Aug</button>
                     <button onClick={() => (setHandleClick(fourthAugust))} className="opacity-50 focus:border-b-4 focus:opacity-100 focus:border-white active:border-b-4 px-3 active:border-white pb-3">04 Aug</button>
                 </div>
-                
+
             </div>
-            <div className="p-5">
+            <div className="">
                 {handleClick}
-                </div>
+            </div>
 
         </div>
     )
