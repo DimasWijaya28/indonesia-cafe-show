@@ -4,8 +4,8 @@ import { useState } from "react"
 export default function RundownEvent() {
     const july = () => {
         return (
-            <div className="flex-col space-y-10 justify-center w-96 font-newScience pl-5">
-                <div id="box-shadow" className="bg-[#EBEBEB] flex">
+            <div className="flex-col space-y-10 justify-center items-center w-96 font-newScience pl-5">
+                <div id="box-shadow" className="bg-[#EBEBEB] flex justify-center">
                     <div className="bg-[#2B2225] w-40 rounded-3xl m-3 flex flex-wrap px-2 py-5 justify-center items-center">
                         <p className="text-[#EBEBEB] text-md">09.00 - 10.00</p>
                         <p className="text-[#EBEBEB] text-sm">WIB</p>
@@ -259,7 +259,7 @@ export default function RundownEvent() {
                 </div>
 
             </div>
-            <div className="">
+            <div className="flex justify-center">
                 {handleClick}
             </div>
 
