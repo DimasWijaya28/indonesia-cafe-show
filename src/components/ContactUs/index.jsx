@@ -3,7 +3,7 @@
 export default function ContactUs() {    
 
     function sendMessage() {
-        const url = `https://wa.me/6287798566706?text=Halo, Nama Saya ${fullName.value}, ${message.value}`
+        const url = `https://wa.me/6287798566706?text=Halo, Nama Saya ${fullName.value}. ${message.value}`
         window.open(url, "_blank")
     }
 
