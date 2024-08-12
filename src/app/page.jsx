@@ -21,24 +21,24 @@ export default function Home() {
       <div className="container mx-auto pt-16">
         {/* Home */}
         <section id="section1" className="">
-          <div className="">
+          <div className="md:flex">
+          <div className="bg-[#203731] px-2 py-3">
+              <h1 className="font-newScience font-bold text-4xl text-[#CBBA9D]">
+                Brewing Indonesia's Finest
+              </h1>
+              <h2 className="font-newScience text-md font-light mt-4 text-[#CBBA9D]">
+                Experience the culmination of Indonesian coffee culture at
+                <span className="font-semibold"> Emporium Pluit Mall, Jakarta. July 31st - August 4th, 2024</span>
+              </h2>
+              <p className="mt-3 font-extralight leading-7 text-md text-[#CBBA9D]">
+                The Indonesia Cafe Show, themed 'Brewing Indonesia's Finest,' is the premier event celebrating the rich heritage and exceptional coffee of Indonesia. This inaugural event brings together industry professionals, cafe owners, and coffee enthusiasts for a unique experience.
+              </p>
+            </div>
             <ImageSlider images={images}>
               {images.map((s) => (
-                <img src={s} alt="" />
+                <img src={s} alt="" className="" />
               ))}
             </ImageSlider>
-          </div>
-          <div className="bg-[#203731] px-2 py-3">
-            <h1 className="font-newScience font-bold text-4xl text-[#CBBA9D]">
-              Brewing Indonesia's Finest
-            </h1>
-            <h2 className="font-newScience text-md font-light mt-4 text-[#CBBA9D]">
-              Experience the culmination of Indonesian coffee culture at
-              <span className="font-semibold"> Emporium Pluit Mall, Jakarta. July 31st - August 4th, 2024</span>
-            </h2>
-            <p className="mt-3 font-extralight leading-7 text-md text-[#CBBA9D]">
-              The Indonesia Cafe Show, themed 'Brewing Indonesia's Finest,' is the premier event celebrating the rich heritage and exceptional coffee of Indonesia. This inaugural event brings together industry professionals, cafe owners, and coffee enthusiasts for a unique experience.
-            </p>
           </div>
 
           <div className="bg-[#8A966D] w-full h-16 border-2 border-[#2B2225]">

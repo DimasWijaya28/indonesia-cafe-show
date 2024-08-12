@@ -11,7 +11,7 @@ export default function ImageSlider({ children: images }) {
     const next = () => setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1))
 
     return (
-        <div className="overflow-hidden relative">
+        <div className="overflow-hidden relative md:w-11/12">
             <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr * 100}%)` }}>{images}</div>
             <div className="absolute inset-x-0 bottom-10 flex items-center justify-center gap-5">
                 <div className="flex items-center justify-center gap-5">

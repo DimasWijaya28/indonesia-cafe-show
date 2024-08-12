@@ -61,19 +61,26 @@ export default function Navbar() {
     )
     return (
         <>
-            <div className="fixed border-2 w-full z-40 px-4 py-3  border-[#2B2225] bg-[#EBEBEB]">
+            <div className="fixed border-2 w-full z-40 px-4 py-3 border-[#2B2225] bg-[#EBEBEB]">
                 {['top'].map((anchor) => (
                     <React.Fragment key={anchor}>
                         <div className="flex justify-between items-center">
                             <img src={"./assets/Group 47.png"} alt="" className="w-32" />
-                            <button onClick={toggleDrawer(anchor, true)}><Bars3Icon className="size-6" /></button>
-                            <Drawer
-                                anchor={anchor}
-                                open={panel[anchor]}
-                                onClose={toggleDrawer(anchor, false)}
-                            >
-                                {menu(anchor)}
-                            </Drawer>
+                            <div className='space-x-5 hidden md:block'>
+                                {navigation.map((item) => <a href={item.href}>{item.name}</a>
+                                )}
+                            </div>
+                            <div></div>
+                            <div className='md:hidden block'>
+                                <button onClick={toggleDrawer(anchor, true)}><Bars3Icon className="size-6" /></button>
+                                <Drawer
+                                    anchor={anchor}
+                                    open={panel[anchor]}
+                                    onClose={toggleDrawer(anchor, false)}
+                                >
+                                    {menu(anchor)}
+                                </Drawer>
+                            </div>
                         </div>
                     </React.Fragment>
                 ))}
