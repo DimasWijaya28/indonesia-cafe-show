@@ -18,11 +18,16 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto pt-16">
+      <div className="container mx-auto px-4 pt-16">
         {/* Home */}
         <section id="section1" className="">
-          <div className="md:flex">
-          <div className="bg-[#203731] px-2 py-3">
+          <div className="md:flex md:flex-row-reverse">
+          <ImageSlider images={images}>
+              {images.map((s) => (
+                <img src={s} alt="" className="md:h-full" />
+              ))}
+            </ImageSlider>
+          <div className="bg-[#203731] px-2 py-3 md:p-10 md:w-11/12">
               <h1 className="font-newScience font-bold text-4xl text-[#CBBA9D]">
                 Brewing Indonesia's Finest
               </h1>
@@ -34,11 +39,7 @@ export default function Home() {
                 The Indonesia Cafe Show, themed 'Brewing Indonesia's Finest,' is the premier event celebrating the rich heritage and exceptional coffee of Indonesia. This inaugural event brings together industry professionals, cafe owners, and coffee enthusiasts for a unique experience.
               </p>
             </div>
-            <ImageSlider images={images}>
-              {images.map((s) => (
-                <img src={s} alt="" className="" />
-              ))}
-            </ImageSlider>
+            
           </div>
 
           <div className="bg-[#8A966D] w-full h-16 border-2 border-[#2B2225]">
@@ -144,7 +145,7 @@ export default function Home() {
         </section >
 
         {/* About */}
-        <div className="bg-[#EBEBEB] px-3 py-5">
+        <div className="bg-[#EBEBEB] px-3 py-5 md:px-28">
           <div className="flex items-start">
             <div className="border-4 border-[#102821] py-4 rounded-full mr-5"></div>
             <div>
@@ -159,11 +160,11 @@ export default function Home() {
               from bean to cup. This inaugural show brings together industry professionals, cafe owners, and coffee enthusiasts for a unique experience.
             </p>
           </div>
-          <div className="mt-10 grid grid-rows-1 gap-5">
-            <div className="flex justify-center items-center border-2 xl:px-2 xl:pt-10 lg:pt-5 bg-[#CBBA9D] border-black rounded-3xl">
-              <div className="px-10 py-5">
+          <div className="mt-10 grid grid-rows-1 gap-5 md:grid-cols-3">
+            <div className="flex justify-center items-center md:items-start border-2 px-2 pt-3 bg-[#CBBA9D] border-black rounded-3xl">
+              <div className="px-10 py-5 md:px-3">
                 <div className="flex justify-center">
-                  <img src={"./assets/Group 97.svg"} alt="" className="" />
+                  <img src={"./assets/Group 97.svg"} alt="" className="md:w-28" />
                 </div>
                 <h3 className="mt-7 text-center font-newScience text-xl font-bold">
                   Discover diverse flavors
@@ -173,10 +174,10 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center items-center border-2 px-2 pt-10 bg-[#CBBA9D] border-black rounded-3xl">
-              <div className="px-10 py-5">
+            <div className="flex justify-center items-center md:items-start border-2 px-2 pt-3 bg-[#CBBA9D] border-black rounded-3xl">
+              <div className="px-10 py-5 md:px-3">
                 <div className="flex justify-center">
-                  <img src={"./assets/Group 97-1.svg"} alt="" className="" />
+                  <img src={"./assets/Group 97-1.svg"} alt="" className="md:w-36" />
                 </div>
                 <h3 className="mt-7 text-center font-newScience font-bold text-xl">
                   National brewing competition
@@ -186,10 +187,10 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center items-center border-2 px-2 pt-10 bg-[#CBBA9D] border-black rounded-3xl">
-              <div className="px-10 py-5">
+            <div className="flex justify-center md:items-start border-2 px-2 pt-3 bg-[#CBBA9D] border-black rounded-3xl">
+              <div className="px-10 py-5 md:px-3">
                 <div className="flex justify-center">
-                  <img src={"./assets/Group 97-2.svg"} alt="" className="" />
+                  <img src={"./assets/Group 97-2.svg"} alt="" className="md:w-28" />
                 </div>
                 <h3 className="mt-7 text-center font-bold text-xl font-newScience">
                   Connect with the community
@@ -212,7 +213,7 @@ export default function Home() {
                   </h1>
                 </div>
               </div>
-              <div className="mt-10 grid grid-cols-2 gap-5">
+              <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5">
                 <div>
                   <img src={"./assets/1-1@2x.png"} alt="" />
                 </div>
